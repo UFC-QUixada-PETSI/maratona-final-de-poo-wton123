@@ -1,0 +1,25 @@
+2025-12-15 16:57:28, MOVE, v:1, k:local@questão1, mode:PICK
+2025-12-15 17:29:12, EXEC, v:1, k:local@questão1, mode:FULL, size:144, fail:COMP
+2025-12-15 17:31:12, EXEC, v:1, k:local@questão1, mode:FULL, size:144, fail:COMP
+2025-12-15 17:31:37, EXEC, v:1, k:local@questão1, mode:FULL, size:144, fail:COMP
+2025-12-15 17:31:51, EXEC, v:1, k:local@questão1, mode:FULL, fail:COMP
+2025-12-15 17:33:15, EXEC, v:1, k:local@questão1, mode:FULL, size:144, fail:COMP
+2025-12-15 17:33:39, EXEC, v:1, k:local@questão1, mode:FULL, size:144, fail:COMP
+2025-12-15 17:34:16, EXEC, v:1, k:local@questão1, mode:FULL, size:145, fail:COMP
+2025-12-15 17:34:45, EXEC, v:1, k:local@questão1, mode:FULL, size:144, fail:COMP
+2025-12-15 17:35:07, EXEC, v:1, k:local@questão1, mode:FULL, size:143, fail:COMP
+2025-12-15 17:37:20, EXEC, v:1, k:local@questão1, mode:FULL, size:143, fail:COMP
+2025-12-15 17:38:02, EXEC, v:1, k:local@questão1, mode:FULL, size:143, fail:COMP
+2025-12-15 17:38:51, EXEC, v:1, k:local@questão1, mode:FULL, size:143, fail:COMP
+2025-12-15 17:41:43, EXEC, v:1, k:local@questão1, mode:FULL, size:143, fail:COMP
+2025-12-15 17:41:59, EXEC, v:1, k:local@questão1, mode:FULL, size:143, fail:COMP
+2025-12-15 17:54:59, EXEC, v:1, k:local@questão1, mode:FULL, size:142, fail:COMP
+2025-12-15 18:07:28, EXEC, v:1, k:local@questão1, mode:FULL, size:142, fail:COMP
+2025-12-15 18:08:56, EXEC, v:1, k:local@questão1, mode:FULL, size:143, fail:COMP
+2025-12-15 18:09:45, EXEC, v:1, k:local@questão1, mode:FULL, size:143, fail:COMP
+2025-12-15 18:09:49, EXEC, v:1, k:local@questão1, mode:FULL, size:143, fail:COMP
+2025-12-15 18:10:12, EXEC, v:1, k:local@questão1, mode:FULL, size:143, fail:COMP
+2025-12-15 18:10:35, EXEC, v:1, k:local@questão1, mode:FULL, size:143, fail:COMP
+2025-12-15 18:10:51, EXEC, v:1, k:local@questão1, mode:FULL, size:143, fail:COMP
+2025-12-15 18:30:16, EXEC, v:1, k:local@questão1, mode:FULL, size:143, fail:COMP
+2025-12-15 18:30:17, MOVE, v:1, k:local@questão1, mode:BACK

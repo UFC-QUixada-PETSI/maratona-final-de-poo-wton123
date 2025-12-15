@@ -11,13 +11,20 @@ class Midia {
 
     public Midia(String titulo) {
         // TODO: Inicialize titulo e tocando = false
+        this.titulo = titulo;
+        this.tocando = false;
     }
 
     public String tocar() {
         // TODO: 
         // Se já estiver tocando, retorne "[titulo] ja esta reproduzindo."
+        if (tocando) {
+            return this.titulo;
+        } else {
+            this.tocando = true;
+            return ("Reproduzindo midia:" +  this.titulo);
+        }
         // Se não, mude tocando para true e retorne "Reproduzindo midia: [titulo]"
-        return "";
     }
 }
 
@@ -25,23 +32,41 @@ class Midia {
 // PASSO 2: SUBCLASSES (FILME E MUSICA)
 // ==================================================================================
 
-// class Filme extends Midia {
+class Filme extends Midia {
     // Atributo extra: diretor
+    String diretor;
     // TODO: Construtor (chame super)
-    
+    public Filme (String titulo, String diretor) {
+        super(titulo);
+        this.diretor = diretor;
+    }
     // TODO: Sobrescreva o método tocar().
+    @Override
+    public String tocar() {
     // Mude tocando = true.
+    this.tocando = true;
     // Retorne "Exibindo filme: [titulo] do diretor [diretor]"
-// }
+    return ("Exibindo filme: " + this.titulo + " do diretor " + this.diretor);
+    }
+}
 
-// class Musica extends Midia {
+class Musica extends Midia {
     // Atributo extra: artista
+    String artista;
     // TODO: Construtor (chame super)
-    
+    public Musica (String titulo, String artista) {
+        super(titulo);
+        this.artista = artista;
+    }
     // TODO: Sobrescreva o método tocar().
+      @Override
+    public String tocar() {
+    this.tocando = true;
+    return ("Tocando musica: " + this.titulo +  " - " + this.artista);
+    }
     // Mude tocando = true.
     // Retorne "Tocando musica: [titulo] - [artista]"
-// }
+}
 
 
 // ==================================================================================
@@ -57,7 +82,11 @@ class Plataforma {
     public void reproduzirTudo() {
         System.out.println("--- PLAYLIST ---");
         // TODO: Percorra a lista e chame o método tocar() de cada elemento.
+        int tamanho = playlist.size();
+        for (Midia b:playlist) {
+            System.out.println(playlist.tocar());
         // Imprima o resultado de cada chamada.
+        }
     }
 }
 
@@ -85,6 +114,7 @@ public class Main {
 
                     case "midia": // PASSO 1
                         midiaTemp = new Midia(tokens[1]);
+                        cineDev.adicionar (midiaTemp);
                         break;
                     
                     case "tocar_midia": // PASSO 1
@@ -94,13 +124,13 @@ public class Main {
                     case "filme": // PASSO 2
                         // Ex: filme Matrix Wachowski
                         // TODO: Descomente
-                        // cineDev.adicionar(new Filme(tokens[1], tokens[2]));
+                        cineDev.adicionar(new Filme(tokens[1], tokens[2]));
                         break;
 
                     case "musica": // PASSO 2
                         // Ex: musica HeyJude Beatles
                         // TODO: Descomente
-                        // cineDev.adicionar(new Musica(tokens[1], tokens[2]));
+                        cineDev.adicionar(new Musica(tokens[1], tokens[2]));
                         break;
 
                     case "playlist": // PASSO 3

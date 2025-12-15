@@ -1,8 +1,8 @@
 🎬 Desafio POO: CineDev Streaming
 
 Objetivo: Construir o backend de uma plataforma que suporta diferentes tipos de mídia.
-
 Conceitos:
+
 
     A classe Midia (pai) define o comportamento genérico.
 
